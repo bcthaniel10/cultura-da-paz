@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f8f7;
+    color: #263238;
+}
+
+header {
+    background-color: #2e7d6f;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #ffffff;
+    color: #2e7d6f;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #2e7d6f;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+form {
+    max-width: 42rem;
+    display: grid;
+    gap: 0.75rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select,
+textarea,
+form button {
+    font: inherit;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0.65rem;
+}
+
+input,
+select,
+textarea {
+    border: 1px solid #aaa;
+    border-radius: 6px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+form button {
+    background-color: #2e7d6f;
+    color: white;
+    border: none;
+}
+
+form button:hover {
+    background-color: #245f55;
+}
+
+#resultado-avaliacao,
+#resultado-relato,
+#dado-destaque {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+body.fonte-ampliada {
+    font-size: 1.2rem;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #174a7e;
+    outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+
+    main {
+        padding: 1rem;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        padding: 18px;
+    }
+}

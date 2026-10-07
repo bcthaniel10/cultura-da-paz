@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultura de Paz</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Cultura de Paz</h1>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="problema.html">O problema</a>
+            <a href="impactos.html">Impactos</a>
+            <a href="combate.html">Como combater</a>
+            <a href="fontes.html">Fontes</a>
+        </nav>
+
+        <button type="button" id="botao-fonte" aria-pressed="false">
+            Ampliar texto
+        </button>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>O que é Cultura de Paz?</h2>
+
+            <p>
+                A Cultura de Paz busca promover atitudes baseadas no respeito,
+                no diálogo, na empatia, na cooperação e na resolução pacífica
+                dos conflitos.
+            </p>
+
+            <p>
+                Construir uma cultura de paz depende da participação de todos.
+                Pequenas atitudes no dia a dia podem contribuir para ambientes
+                mais respeitosos, seguros e acolhedores.
+            </p>
+        </section>
+
+        <section>
+            <h2>Por que a Cultura de Paz é importante?</h2>
+
+            <p>
+                A convivência entre pessoas diferentes pode gerar opiniões e
+                pensamentos diversos. O diálogo e o respeito ajudam a lidar
+                com essas diferenças sem recorrer à violência.
+            </p>
+
+            <p>
+                A Cultura de Paz também incentiva a cooperação, a solidariedade
+                e a busca por soluções para os conflitos.
+            </p>
+        </section>
+
+        <!-- DADO QUANTITATIVO -->
+        <section>
+            <h2>Dados sobre o tema</h2>
+
+            <p id="dado-destaque">
+                Clique no botão para visualizar o dado pesquisado.
+            </p>
+
+            <button type="button" id="mostrar-dado">
+                Mostrar dado
+            </button>
+        </section>
+
+        <!-- AVALIAÇÃO -->
+        <section aria-labelledby="titulo-avaliacao">
+
+            <h2 id="titulo-avaliacao">
+                Avalie esta página
+            </h2>
+
+            <form id="form-avaliacao" novalidate>
+
+                <label for="clareza">
+                    As informações foram claras?
+                </label>
+
+                <select id="clareza" name="clareza" required>
+                    <option value="">Selecione</option>
+                    <option value="sim">Sim</option>
+                    <option value="parcialmente">
+                        Parcialmente
+                    </option>
+                    <option value="nao">Não</option>
+                </select>
+
+                <label for="nota">
+                    Facilidade de navegação (1 a 5)
+                </label>
+
+                <input
+                    id="nota"
+                    name="nota"
+                    type="number"
+                    min="1"
+                    max="5"
+                    required
+                >
+
+                <label for="sugestao">
+                    O que poderia melhorar?
+                </label>
+
+                <textarea
+                    id="sugestao"
+                    name="sugestao"
+                    rows="4"
+                    maxlength="500"
+                ></textarea>
+
+                <button type="submit">
+                    Conferir avaliação
+                </button>
+
+                <p
+                    id="resultado-avaliacao"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+
+            </form>
+        </section>
+
+        <!-- RELATO -->
+        <section aria-labelledby="titulo-relato">
+
+            <h2 id="titulo-relato">
+                Relato de uma situação fictícia
+            </h2>
+
+            <p>
+                Utilize somente situações fictícias nesta versão do projeto.
+            </p>
+
+            <form id="form-relato" novalidate>
+
+                <label for="categoria">
+                    Categoria
+                </label>
+
+                <select id="categoria" name="categoria" required>
+                    <option value="">Selecione</option>
+                    <option value="dialogo">
+                        Diálogo e convivência
+                    </option>
+
+                    <option value="respeito">
+                        Respeito
+                    </option>
+
+                    <option value="ambiente-digital">
+                        Ambiente digital
+                    </option>
+                </select>
+
+                <label for="descricao">
+                    Descreva a situação fictícia
+                </label>
+
+                <textarea
+                    id="descricao"
+                    name="descricao"
+                    rows="5"
+                    maxlength="1000"
+                    required
+                ></textarea>
+
+                <label for="sugestao-relato">
+                    Sugestão de encaminhamento
+                </label>
+
+                <textarea
+                    id="sugestao-relato"
+                    name="sugestao"
+                    rows="3"
+                    maxlength="500"
+                ></textarea>
+
+                <button type="submit">
+                    Conferir relato
+                </button>
+
+                <p
+                    id="resultado-relato"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Projeto Cultura de Paz — Trabalho de FrontEnd
+        </p>
+    </footer>
+
+    <script src="js/interacoes.js"></script>
+
+</body>
+</html>
