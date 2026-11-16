@@ -58,4 +58,16 @@ VALUES (
     '8 a cada 10 estudantes já presenciaram episódios de cyberbullying ou conflitos online.',
     'Pesquisa Fictícia / Fonte Oficial',
     2024
+
+    CREATE TABLE mensagens_inspiracao (
+    id_mensagem INT AUTO_INCREMENT PRIMARY KEY,
+    texto TEXT NOT NULL,
+    autor VARCHAR(100) NOT NULL,
+    curtidas INT DEFAULT 0
+);
+
+INSERT INTO mensagens_inspiracao (texto, autor, curtidas) VALUES
+('A paz começa com um sorriso.', 'Santa Teresa de Calcutá', 200),
+('A paz é a única batalha que vale a pena ser travada.', 'Albert Camus', 150),
+('Se queremos ensinar a verdadeira paz neste mundo, devemos começar pelas crianças.', 'Mahatma Gandhi', 320);
 );
